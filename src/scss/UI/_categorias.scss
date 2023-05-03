@@ -1,0 +1,47 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.categorias {
+  padding: 5rem 0;
+  background-color: v.$grisClaro;
+
+  &__titulo {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+
+    @include m.tablet {
+      font-size: 4rem;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+
+    @include m.tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include m.desktop {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+.categoria {
+  width: 100%;
+  max-width: 40rem;
+
+  &__img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+  }
+
+  &__nombre {
+    margin: 2rem 0;
+    text-align: center;
+  }
+}
