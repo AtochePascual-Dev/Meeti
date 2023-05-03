@@ -1,0 +1,51 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.grupos {
+  padding: 5rem 0;
+  background-image: linear-gradient(
+    to bottom,
+    v.$secundario 0%,
+    v.$secundario 50%,
+    v.$primario 50%,
+    v.$primario 100%
+  );
+
+  @include m.tablet {
+    padding: 10rem 0;
+    background-image: linear-gradient(
+      to right,
+      v.$secundario 0%,
+      v.$secundario 50%,
+      v.$primario 50%,
+      v.$primario 100%
+    );
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 5rem;
+
+    @include m.tablet {
+      grid-template-rows: unset;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__box {
+    max-width: 40rem;
+  }
+
+  &__titulo {
+    margin-bottom: 2rem;
+    color: v.$blanco;
+  }
+
+  &__texto {
+    line-height: 1.8;
+    color: v.$blanco;
+  }
+}

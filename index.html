@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="La mejor pagina para conseguir tus cursos">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meeti</title>
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Staatliches" rel="stylesheet">
+	<!-- Css -->
+	<link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+	<header class="header header-container">
+		<a href="./index.html">
+			<figure>
+				<picture>
+					<source srcset="./build/img/logo.avif" type="image/avif">
+					<source srcset="./build/img/logo.webp" type="image/webp">
+					<img src="./build/img/logo.png" alt="logo" loading="lazy" width="300" height="auto">
+				</picture>
+			</figure>
+		</a>
+
+		<nav class="navegacion">
+			<a class="navegacion__link navegacion__link--select" href="#">Crear Grupo</a>
+			<a class="navegacion__link" href="#">Iniciar Sesión</a>
+			<a class="navegacion__link" href="#">Registrarse</a>
+		</nav>
+	</header>
+
+	<section class="hero">
+		<div class="hero__content hero-container">
+			<h1 class="hero__titulo">Encuentra o crea un grupo para compartir lo que más te gusta</h1>
+			<a href="#" class="hero__enlace">obtener una cuenta</a>
+		</div>
+	</section>
+
+	<section class="busqueda">
+		<div class="busqueda-container">
+			<h2 class="busqueda__titulo">Busca un grupo en tu ciudad</h2>
+
+			<form class="formulario">
+				<select class="formulario__select" name="" id="">
+					<option value="" selected disabled>-- Seleccione --</option>
+					<option value="">Programación</option>
+					<option value="">Diseño</option>
+					<option value="">Negocios</option>
+					<option value="">Moda</option>
+					<option value="">Comida</option>
+					<option value="">Fotografia</option>
+					<option value="">Cine</option>
+					<option value="">Libros</option>
+				</select>
+
+				<input class="formulario__input" type="text" placeholder="Nombre del evento">
+				<input class="formulario__input" type="text" placeholder="Ciudad y País">
+				<input class="formulario__submit" type="submit" value="Buscar">
+			</form>
+		</div>
+	</section>
+
+	<main class="eventos eventos-container">
+		<h2 class="eventos__titulo">Proximos Eventos</h2>
+
+		<div class="eventos__grid">
+
+			<div class="evento">
+				<a href="./meeti.html">
+					<figure>
+						<picture>
+							<source srcset="./build/img/imagen1.avif" type="image/avif">
+							<source srcset="./build/img/imagen1.webp" type="image/webp">
+							<img class="evento__img" src="./build/img/imagen1.jpg" alt="imagen meeti" loading="lazy" width="300">
+						</picture>
+					</figure>
+
+					<div class="evento__content">
+						<p class="evento__fecha">Jueves 30 de Setiembre de 20225</p>
+						<h3 class="evento__nombre">Ideas de Negocios</h3>
+
+						<div class="evento__autor">
+							<figure>
+								<picture>
+									<source srcset="./build/img/perfil1.avif" type="image/avif">
+									<source srcset="./build/img/perfil1.webp" type="image/webp">
+									<img class="evento__img-autor" src="./build/img/perfil1.jpg" alt="imagen autor" loading="lazy"
+										width="100">
+								</picture>
+							</figure>
+
+							<div class="evento__descripcion">
+								<p class="evento__organizado-texto">Organizado por:</p>
+								<p class="evento__organizado-nombre">Fernando Ulizes</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div> <!-- End evento -->
+
+			<div class="evento">
+				<a href="./meeti.html">
+					<figure>
+						<picture>
+							<source srcset="./build/img/imagen2.avif" type="image/avif">
+							<source srcset="./build/img/imagen2.webp" type="image/webp">
+							<img class="evento__img" src="./build/img/imagen2.jpg" alt="imagen meeti" loading="lazy" width="300">
+						</picture>
+					</figure>
+
+					<div class="evento__content">
+						<p class="evento__fecha">Jueves 30 de Setiembre de 20225</p>
+						<h3 class="evento__nombre">Bitcoin y Criptos</h3>
+
+						<div class="evento__autor">
+							<figure>
+								<picture>
+									<source srcset="./build/img/perfil2.avif" type="image/avif">
+									<source srcset="./build/img/perfil2.webp" type="image/webp">
+									<img class="evento__img-autor" src="./build/img/perfil2.jpg" alt="imagen autor" loading="lazy"
+										width="100">
+								</picture>
+							</figure>
+
+							<div class="evento__descripcion">
+								<p class="evento__organizado-texto">Organizado por:</p>
+								<p class="evento__organizado-nombre">Javier Carmona</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div> <!-- End evento -->
+
+			<div class="evento">
+				<a href="./meeti.html">
+					<figure>
+						<picture>
+							<source srcset="./build/img/imagen3.avif" type="image/avif">
+							<source srcset="./build/img/imagen3.webp" type="image/webp">
+							<img class="evento__img" src="./build/img/imagen3.jpg" alt="imagen meeti" loading="lazy" width="300">
+						</picture>
+					</figure>
+
+					<div class="evento__content">
+						<p class="evento__fecha">Jueves 30 de Setiembre de 20225</p>
+						<h3 class="evento__nombre">Pizza paso a paso</h3>
+
+						<div class="evento__autor">
+							<figure>
+								<picture>
+									<source srcset="./build/img/perfil1.avif" type="image/avif">
+									<source srcset="./build/img/perfil1.webp" type="image/webp">
+									<img class="evento__img-autor" src="./build/img/perfil1.jpg" alt="imagen autor" loading="lazy"
+										width="100">
+								</picture>
+							</figure>
+
+							<div class="evento__descripcion">
+								<p class="evento__organizado-texto">Organizado por:</p>
+								<p class="evento__organizado-nombre">Atoche Pascual</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div> <!-- End evento -->
+		</div>
+	</main>
+
+	<section class="categorias">
+		<div class="categorias-container">
+			<h2 class="categorias__titulo">Categorías</h2>
+
+			<div class="categorias__grid">
+
+				<div class="categoria">
+					<figure>
+						<picture>
+							<source srcset="./build/img/categoria_1.avif" type="image/avif">
+							<source srcset="./build/img/categoria_1.webp" type="image/webp">
+							<img class="categoria__img" src="./build/img/categoria_1.jpg" alt="categoria" loading="lazy" width="300"
+								height="300">
+						</picture>
+					</figure>
+
+					<h3 class="categoria__nombre">Programación</h3>
+				</div> <!-- END categoria -->
+
+				<div class="categoria">
+					<figure>
+						<picture>
+							<source srcset="./build/img/categoria_2.avif" type="image/avif">
+							<source srcset="./build/img/categoria_2.webp" type="image/webp">
+							<img class="categoria__img" src="./build/img/categoria_2.jpg" alt="categoria" loading="lazy" width="300"
+								height="300">
+						</picture>
+					</figure>
+
+					<h3 class="categoria__nombre">Diseño</h3>
+				</div> <!-- END categoria -->
+
+				<div class="categoria">
+					<figure>
+						<picture>
+							<source srcset="./build/img/categoria_3.avif" type="image/avif">
+							<source srcset="./build/img/categoria_3.webp" type="image/webp">
+							<img class="categoria__img" src="./build/img/categoria_3.jpg" alt="categoria" loading="lazy" width="300"
+								height="300">
+						</picture>
+					</figure>
+
+					<h3 class="categoria__nombre">Negocio e Ideas</h3>
+				</div> <!-- END categoria -->
+
+				<div class="categoria">
+					<figure>
+						<picture>
+							<source srcset="./build/img/categoria_4.avif" type="image/avif">
+							<source srcset="./build/img/categoria_4.webp" type="image/webp">
+							<img class="categoria__img" src="./build/img/categoria_4.jpg" alt="categoria" loading="lazy" width="300"
+								height="300">
+						</picture>
+					</figure>
+
+					<h3 class="categoria__nombre">Ropa y Moda</h3>
+				</div> <!-- END categoria -->
+
+				<div class="categoria">
+					<figure>
+						<picture>
+							<source srcset="./build/img/categoria_5.avif" type="image/avif">
+							<source srcset="./build/img/categoria_5.webp" type="image/webp">
+							<img class="categoria__img" src="./build/img/categoria_5.jpg" alt="categoria" loading="lazy" width="300"
+								height="300">
+						</picture>
+					</figure>
+
+					<h3 class="categoria__nombre">Ejercicio</h3>
+				</div> <!-- END categoria -->
+
+				<div class="categoria">
+					<figure>
+						<picture>
+							<source srcset="./build/img/categoria_6.avif" type="image/avif">
+							<source srcset="./build/img/categoria_6.webp" type="image/webp">
+							<img class="categoria__img" src="./build/img/categoria_6.jpg" alt="categoria" loading="lazy" width="300"
+								height="300">
+						</picture>
+					</figure>
+
+					<h3 class="categoria__nombre">Fotografia</h3>
+				</div> <!-- END categoria -->
+
+				<div class="categoria">
+					<figure>
+						<picture>
+							<source srcset="./build/img/categoria_7.avif" type="image/avif">
+							<source srcset="./build/img/categoria_7.webp" type="image/webp">
+							<img class="categoria__img" src="./build/img/categoria_7.jpg" alt="categoria" loading="lazy" width="300"
+								height="300">
+						</picture>
+					</figure>
+
+					<h3 class="categoria__nombre">Comida</h3>
+				</div> <!-- END categoria -->
+
+				<div class="categoria">
+					<figure>
+						<picture>
+							<source srcset="./build/img/categoria_8.avif" type="image/avif">
+							<source srcset="./build/img/categoria_8.webp" type="image/webp">
+							<img class="categoria__img" src="./build/img/categoria_8.jpg" alt="categoria" loading="lazy" width="300"
+								height="300">
+						</picture>
+					</figure>
+
+					<h3 class="categoria__nombre">Interior</h3>
+				</div> <!-- END categoria -->
+
+				<div class="categoria">
+					<figure>
+						<picture>
+							<source srcset="./build/img/categoria_9.avif" type="image/avif">
+							<source srcset="./build/img/categoria_9.webp" type="image/webp">
+							<img class="categoria__img" src="./build/img/categoria_9.jpg" alt="categoria" loading="lazy" width="300"
+								height="300">
+						</picture>
+					</figure>
+
+					<h3 class="categoria__nombre">Café</h3>
+				</div> <!-- END categoria -->
+
+				<div class="categoria">
+					<figure>
+						<picture>
+							<source srcset="./build/img/categoria_10.avif" type="image/avif">
+							<source srcset="./build/img/categoria_10.webp" type="image/webp">
+							<img class="categoria__img" src="./build/img/categoria_10.jpg" alt="categoria" loading="lazy" width="300"
+								height="300">
+						</picture>
+					</figure>
+
+					<h3 class="categoria__nombre">Cine</h3>
+				</div> <!-- END categoria -->
+
+				<div class="categoria">
+					<figure>
+						<picture>
+							<source srcset="./build/img/categoria_11.avif" type="image/avif">
+							<source srcset="./build/img/categoria_11.webp" type="image/webp">
+							<img class="categoria__img" src="./build/img/categoria_11.jpg" alt="categoria" loading="lazy" width="300"
+								height="300">
+						</picture>
+					</figure>
+
+					<h3 class="categoria__nombre">Libros</h3>
+				</div> <!-- END categoria -->
+
+				<div class="categoria">
+					<figure>
+						<picture>
+							<source srcset="./build/img/categoria_12.avif" type="image/avif">
+							<source srcset="./build/img/categoria_12.webp" type="image/webp">
+							<img class="categoria__img" src="./build/img/categoria_12.jpg" alt="categoria" loading="lazy" width="300"
+								height="300">
+						</picture>
+					</figure>
+
+					<h3 class="categoria__nombre">Emprendimiento</h3>
+				</div> <!-- END categoria -->
+			</div>
+		</div>
+	</section>
+
+	<section class="grupos">
+		<div class="grupos__grid grupo-container">
+			<div class="grupos__box">
+				<h2 class="grupos__titulo">Crea un grupo</h2>
+				<p class="grupos__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi cumque tempora
+					voluptates! Laudantium ad dolor perspiciatis ut? Officiis, illum sunt!</p>
+			</div>
+
+			<div class="grupos__box">
+				<h2 class="grupos__titulo">Unete a un Grupo</h2>
+				<p class="grupos__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi cumque tempora
+					voluptates! Laudantium ad dolor perspiciatis ut? Officiis, illum sunt!</p>
+			</div>
+
+		</div>
+	</section>
+
+	<footer class="footer footer-container">
+		<nav class="navegacion">
+			<a class="navegacion__link navegacion__link--select" href="#">Crear Grupo</a>
+			<a class="navegacion__link" href="#">Iniciar Sesión</a>
+			<a class="navegacion__link" href="#">Registrarse</a>
+		</nav>
+
+		<p class="footer__copy">Todos los derechos reservados &copy;</p>
+	</footer>
+</body>
+
+</html>
